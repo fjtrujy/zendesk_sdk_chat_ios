@@ -41,7 +41,5 @@ Pod::Spec.new do |s|
     s.subspec 'API' do |ss|
         ss.frameworks = 'SystemConfiguration'
         ss.ios.vendored_frameworks = 'ZDCChatAPI.framework'
-        ss.preserve_paths = 'ZDCChatAPI.framework'
-        ss.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(inherited)', 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
     end
 end
